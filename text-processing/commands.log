@@ -1,0 +1,43 @@
+  406  sudo nano /usr/local/bin/hello.sh
+  410  sudo chmod +x /usr/local/bin/hello.sh
+  412  sudo nano /etc/systemd/system/hello.service
+  413  sudo systemctl daemon-reload
+  414  sudo systemctl enable hello.service
+  415  sudo systmemctl status hello.service
+  416  sudo systmctl status hello.service
+  417  sudo systemctl status hello.service
+  420  sudo nano hello.service
+  421  sudo nano hello.sh
+  422  sudo nano /etc/systemd/system/hello.service
+  423  sudo nano /etc/systemd/system/hello.sh
+  424  sudo nano /etc/systemd/system/hello.service
+  425  sudo nano /etc/systemd/system/hello.sh
+  426  sudo nano /usr/local/bin/hello.sh
+  433  sudo nano /usr/local/bin/hello.sh
+  434  sudo nano /etc/systemd/system/hello.service
+  435  sudo systemctl daemon-reload
+  436  sudo systemctl enable
+  437  sudo systemctl enable hello.sh
+  438  sudo systemctl enable hello.service
+  439  sudo systemctl start hello.service
+  440  sudo systemctl status hello.service
+  458  sudo nano /etc/ssh/ssh-config
+  459  sudo nano /etc/ssh/ssh_config
+  460  sudo systemctl restart ssh
+  461  sudo apt update && sudo apt install nginx -y
+  462  sudo systemctl enable --now nginx
+  463  sudo nano /var/www/html/index.nginx-debian.html
+  464  sudo ufw allow 80/tcp
+  467  sudo mkdir /mnt/mytest
+  468  sudo mount -o loop ~/disk.img /mnt/mytest
+  472  sudo ss -lptn 'sport = :80'
+  481  # 2. Copy your service file (requires sudo)
+  482  sudo cp /etc/systemd/system/hello.service server-admin/
+  492  git add server-admin day-06.md
+  493  git commit -m "Day 06 – server admin tasks completed"
+  494  git push
+  497  history 100 | grep "git" "sudo" >> commands.log
+  498  history 100 | grep [git,sudo] >> commands.log
+  500  history 100 | grep git\|sudo > commands.log
+  502  history 100 | grep git\|sudo >> commands.log
+  504  history 100 | grep "git\|sudo" >> commands.log

@@ -1,0 +1,12 @@
+Fri Dec 26 06:32:18 PM WAT 2025
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1.6G  2.3M  1.6G   1% /run
+/dev/nvme0n1p2  233G   91G  131G  41% /
+tmpfs           7.6G  265M  7.3G   4% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+efivarfs        118K   58K   56K  51% /sys/firmware/efi/efivars
+/dev/nvme0n1p1  1.1G  6.2M  1.1G   1% /boot/efi
+tmpfs           1.6G  120K  1.6G   1% /run/user/1000
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       3.5Gi       8.6Gi       584Mi       3.8Gi        11Gi
+Swap:          4.0Gi          0B       4.0Gi
