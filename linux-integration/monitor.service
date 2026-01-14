@@ -1,0 +1,10 @@
+[Unit]
+Description=MY health Monitor 
+
+[Service]
+ExecStart=/home/niyhi/devops-300/bash-scripts/health.sh
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
