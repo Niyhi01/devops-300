@@ -1,0 +1,35 @@
+10.0.0.0/16
+Network: 10.0.0.0
+Broadcast: 10.0.255.255
+First usable: 10.0.0.1
+Last usable: 10.0.255.254
+Hosts: 65,534
+
+172.16.0.0/20
+Network: 172.16.0.0
+Broadcast: 172.16.15.255
+First usable: 172.16.0.1
+
+Last usable: 172.16.15.254
+Hosts: 4,094
+
+
+192.168.10.0/27
+Network: 192.168.10.0
+
+Broadcast: 192.168.10.31
+
+First usable: 192.168.10.1
+
+Last usable: 192.168.10.30
+Hosts: 30
+
+
+
+
+102.88.114.32/24
+Network: 102.88.114.32
+Broadcast: 102.88.114.255
+First usable: 102.88.114.1
+Last usable: 102.88.114.254
+Hosts: 254
