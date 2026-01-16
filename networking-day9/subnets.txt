@@ -33,3 +33,12 @@ Broadcast: 102.88.114.255
 First usable: 102.88.114.1
 Last usable: 102.88.114.254
 Hosts: 254
+
+
+
+192.168.0.0/23
+Network: 192.168.0.0
+Broadcast: 192.168.1.255
+First usable: 192.168.1.1
+Last usable: 192.168.1.254
+Host: 510

@@ -1,14 +1,9 @@
 #!/bin/bash
-# Usage: ./subnet-check.sh 192.168.1.0/24
-
-if [ $# -ne 1 ]; then
-	echo "Usage: $0 CIDR"
-	exit 1
+CIDR=$1
+if [ -z "$CIDR" ]; then
+    echo "Usage: $0 CIDR (e.g., 192.168.1.0/24)"
+    exit 1
 fi
 
-CIDR=$1
-
-# Install ipcalc if missing (one time)
-# sudo apt install ipcalc -y
-
-ipcalc $CIDR
+echo -e "\033[1;34mSubnet Info for $CIDR\033[0m"
+ipcalc $CIDR | grep -E "Address:|Netmask:|Network:|HostMin:|HostMax:|Broadcast:|Hosts/Net:"
