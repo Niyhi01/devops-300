@@ -1,0 +1,12 @@
+Router vs Switch Summary (Day 10 Notes)
+
+
+
+switch is the connector of computer data transfer within a network, it uses mac address to know the distination to send a data, it is a layer 2 element, data flowing through the swithch is called frame.
+
+Router is the connector of data transfer between different seperate nerwork buildings, it is a layer3 element, it uses ip addressing to deliver data accross network, data floeing through the router is called packet.
+
+
+Real life Example:
+
+in my hostel, we are using a single printer for all the room, we connected every room to the printer, switch help to deliver each data to the printer and get response to the correct sender of the data without sending to the wrong room. whereas, router help to use the printer in another hostel without mistaking data from a room in our hostel to another hostel.
