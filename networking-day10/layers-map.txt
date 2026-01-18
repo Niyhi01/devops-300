@@ -1,0 +1,9 @@
+OSI Layer          | TCP/IP Layer     | Example Devices/Protocols
+-------------------|------------------|---------------------------
+7. Application     | Application      | HTTP, DNS, FTP
+6. Presentation    | Application      | Encryption, JPEG
+5. Session         | Application      | NetBIOS, RPC
+4. Transport       | Transport        | TCP, UDP
+3. Network         | Internet         | IP, Router
+2. Data Link       | Link             | Ethernet, Switch
+1. Physical        | Link             | Cables, Hubs

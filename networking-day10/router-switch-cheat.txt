@@ -1,0 +1,11 @@
+Switch (Layer 2):
+- Uses MAC addresses
+- Forwards frames inside same network
+- Builds MAC address table
+- Reduces collisions
+
+Router (Layer 3):
+- Uses IP addresses
+- Forwards packets between different networks
+- Builds routing table
+- Enables internet connectivity
