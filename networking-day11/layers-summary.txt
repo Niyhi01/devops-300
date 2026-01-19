@@ -1,0 +1,6 @@
+OSI vs TCP/IP – My Understanding
+- OSI 7 layers: theoretical model (Physical → Application)
+- TCP/IP 4 layers: real-world (Link → Internet → Transport → Application)
+- Transport layer is where TCP (reliable) and UDP (fast) live
+- Application layer handles user protocols (HTTP, DNS)
+- Why it matters: helps debug where traffic fails (e.g., Layer 3 = routing problem)

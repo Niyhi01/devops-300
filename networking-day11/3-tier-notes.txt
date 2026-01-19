@@ -1,0 +1,5 @@
+3-Tier Network Design (Why we don't use flat networks)
+- Access layer: Connects end devices (PCs, phones) – switches
+- Distribution layer: Enforces rules (VLANs, security, routing) – routers/switches
+- Core layer: Fast backbone between buildings/data centers – high-speed routers
+- Benefit: Scales, secures, easier to troubleshoot
