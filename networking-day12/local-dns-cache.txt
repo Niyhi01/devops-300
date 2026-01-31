@@ -1,0 +1,2 @@
+facebook.com 102.132.101.35
+google.com 142.251.216.110
