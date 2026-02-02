@@ -29,10 +29,10 @@ for PORT in 21 23 80 443 445; do
 done
 
 if [ $OPEN_PORT_COUNT -ge 4 ]; then
-    RISK="HIGH"
+    echo "Risk=HIGH!"
 elif [ $OPEN_PORT_COUNT -ge 2 ]; then
-    RISK="MEDIUM"
+    echo "Risk=MEDIUM!"
 else
-    RISK="LOW"
+    echo "Risk=LOW!"
 fi
 } | tee -a $REPORT

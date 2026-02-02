@@ -9,3 +9,16 @@ Port 23 closed -> Good
 Port 80 open -> High Risk!
 Port 443 open -> High Risk!
 Port 445 closed -> Good
+Scanning google.com...
+Port 21 closed -> Good
+Port 23 closed -> Good
+Port 80 open -> High Risk!
+Port 443 open -> High Risk!
+Port 445 closed -> Good
+Scanning google.com...
+Port 21 closed -> Good
+Port 23 closed -> Good
+Port 80 open -> High Risk!
+Port 443 open -> High Risk!
+Port 445 closed -> Good
+Risk=MEDIUM!
