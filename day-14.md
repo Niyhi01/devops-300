@@ -38,3 +38,31 @@ Understanding the physical layer is critical for on-premise DevOps. If the cable
 
 ## Ownership Statement
 "I wrote 100% of the script myself this morning during the practice block. I manually structured the quiz logic and the scoring system."
+
+
+
+
+# Day 14 Evening: Integrated Network Diagnostic Dashboard
+
+## Project Summary: Network Dashboard v1
+The goal of this project was to move away from running individual scripts manually. I built a "Master Wrapper" script that executes the entire week's worth of networking tools and compiles their output into a single, shareable HTML report. This simulates a real-world monitoring dashboard used by DevOps teams to check system health at a glance.
+
+## Technical Implementation
+- **Integration Strategy:** Used a Bash Array to store paths for scripts from Day 9 through Day 13.
+- **Reporting:** Generated a dynamic HTML file using "Here Documents" and redirection.
+- **Formatting:** Used `<pre>` tags and basic CSS styling to ensure terminal output remains readable and looks professional in a web browser.
+- **Error Handling:** Included `2>&1` to capture both standard output and error messages into the dashboard for easier troubleshooting.
+
+## Reflection Questions
+
+### 1. Hardest part and why?
+The hardest part was managing the logic flow within the HTML generation. Initially, I tried to run the loop inside a subshell within a `cat` command (Inception bug), which made variable management difficult. Separating the Header, Loop, and Footer into distinct blocks made the script much more stable and readable.
+
+### 2. Why is a single HTML report better than separate text files?
+In a production environment, a single HTML report is superior because it provides a centralized view of the entire stack. Stakeholders or senior engineers can open one file in a browser and see the status of DNS, connectivity, and security without navigating a complex directory structure.
+
+### 3. What would you add next?
+I would add color-coding for risks (e.g., using `sed` to wrap the word "Risk" in a red `<span>` tag) and perhaps a navigation sidebar if the report grows any larger. I would also automate the delivery of this report via an email tool like `mailx` or a Slack Webhook.
+
+## Ownership Statement
+"I wrote 100% of the script myself without AI generating full blocks. I integrated my own work from the past 6 days into this unified tool."

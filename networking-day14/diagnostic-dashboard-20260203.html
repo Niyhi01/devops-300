@@ -1,0 +1,101 @@
+<html>
+<head><title>DevOps Network Dashboard</title></head>
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+<h1>Network Diagnostic Dashboard v1</h1>
+<p>Generated on: Tue Feb  3 09:21:19 AM WAT 2026</p>
+<hr>
+<h2>Module 1: networking-day9/network-diagnostic.sh</h2>
+<pre style='background-color: #2e2e2e; color: #00ff00; padding: 15px; border-radius: 5px; overflow: auto;'>
+[1;36mDiagnostic Report for: 8.8.8.8[0m
+----------------------------------------
+1. Checking Reachability (Ping)...
+[0;32m[SUCCESS] Target is reachable.[0m
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=112 time=93.4 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=112 time=734 ms
+
+2. Path Analysis (Traceroute):
+ 1  _gateway (192.168.160.30)  6.243 ms  6.104 ms  6.022 ms
+ 2  10.9.149.2 (10.9.149.2)  92.832 ms  92.758 ms  92.766 ms
+ 3  10.9.232.121 (10.9.232.121)  93.383 ms 10.9.232.125 (10.9.232.125)  93.309 ms 10.9.232.121 (10.9.232.121)  93.238 ms
+ 4  10.198.135.1 (10.198.135.1)  92.364 ms  92.291 ms  92.220 ms
+ 5  10.198.135.13 (10.198.135.13)  92.949 ms  92.877 ms  92.805 ms
+ 6  102.89.89.78 (102.89.89.78)  92.115 ms  69.093 ms  68.768 ms
+ 7  102.89.88.18 (102.89.88.18)  68.846 ms  92.112 ms  91.955 ms
+ 8  * 102.89.4.11 (102.89.4.11)  91.798 ms *
+ 9  192.178.106.185 (192.178.106.185)  91.652 ms * 192.178.105.231 (192.178.105.231)  83.542 ms
+10  dns.google (8.8.8.8)  83.464 ms 172.253.76.173 (172.253.76.173)  83.391 ms 172.253.176.237 (172.253.176.237)  83.282 ms
+
+3. DNS Resolution:
+
+4. Checking Web Ports (80/443):
+Port 80 is closed.
+Connection to 8.8.8.8 443 port [tcp/https] succeeded!
+
+5. Local Listening Ports (Top 5):
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*          
+tcp   LISTEN 0      511        127.0.0.1:4000       0.0.0.0:*          
+tcp   LISTEN 0      511          0.0.0.0:80         0.0.0.0:*          
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*          
+----------------------------------------
+[1;32mDiagnostic complete.[0m
+</pre>
+<h2>Module 2: networking-day10/network-layer.sh</h2>
+<pre style='background-color: #2e2e2e; color: #00ff00; padding: 15px; border-radius: 5px; overflow: auto;'>
+OSI Model Layers:
+1. Physical - Cables, hubs
+2. Data Link - Switches, MAC addresses
+3. Network - Routers, IP addresses
+4. Transport - TCP/UDP
+5. Session - NetBIOS, RPC
+6. Presentation - Encryption, compression
+7. Application - HTTP, DNS, FTP
+
+TCP/IP Model Layers:
+Link - Physical + Data Link
+Internet - Network (IP)
+Transport - TCP/UDP
+Application - HTTP, DNS, etc.
+</pre>
+<h2>Module 3: networking-day11/network-health-reporter.sh</h2>
+<pre style='background-color: #2e2e2e; color: #00ff00; padding: 15px; border-radius: 5px; overflow: auto;'>
+traceroute to 8.8.8.8 (8.8.8.8), 15 hops max, 60 byte packets
+ 1  _gateway (192.168.160.30)  52.744 ms  52.522 ms  52.416 ms
+ 2  10.9.149.2 (10.9.149.2)  86.745 ms  86.637 ms  150.761 ms
+ 3  10.9.232.121 (10.9.232.121)  150.881 ms  150.775 ms  150.666 ms
+ 4  10.198.135.1 (10.198.135.1)  150.338 ms  150.157 ms  150.044 ms
+ 5  10.198.135.13 (10.198.135.13)  150.164 ms  150.058 ms  149.946 ms
+ 6  102.89.89.78 (102.89.89.78)  149.598 ms  89.279 ms  89.108 ms
+ 7  102.89.88.10 (102.89.88.10)  89.009 ms 102.89.88.18 (102.89.88.18)  57.238 ms  57.080 ms
+ 8  102.89.4.11 (102.89.4.11)  32.761 ms  38.923 ms *
+ 9  192.178.106.247 (192.178.106.247)  100.974 ms * *
+10  dns.google (8.8.8.8)  100.688 ms  100.606 ms 172.253.176.239 (172.253.176.239)  100.526 ms
+8.8.8.8.in-addr.arpa	name = dns.google.
+
+Authoritative answers can be found from:
+
+Port 80 is CLOSED
+Connection to 8.8.8.8 443 port [tcp/https] succeeded!
+Port 443 is OPEN
+      5 
+      4 53
+      3 5353
+      1 80
+      1 631
+</pre>
+<h2>Module 4: networking-day12/dns-cache-lookup.sh</h2>
+<pre style='background-color: #2e2e2e; color: #00ff00; padding: 15px; border-radius: 5px; overflow: auto;'>
+Cache Hit!
+google.com 142.251.216.46
+</pre>
+<h2>Module 5: networking-day13/home-port-scanner.sh</h2>
+<pre style='background-color: #2e2e2e; color: #00ff00; padding: 15px; border-radius: 5px; overflow: auto;'>
+Scanning 192.168.1.1...
+Port 21 closed -> Good
+Port 23 closed -> Good
+Port 80 closed -> Good
+Port 443 closed -> Good
+Port 445 closed -> Good
+Risk=LOW!
+</pre>
+</body></html>
