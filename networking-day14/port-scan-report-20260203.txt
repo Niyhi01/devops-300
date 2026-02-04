@@ -1,0 +1,28 @@
+Scanning 192.168.1.1...
+Port 21 closed -> Good
+Port 23 closed -> Good
+Port 80 closed -> Good
+Port 443 closed -> Good
+Port 445 closed -> Good
+Risk=LOW!
+Scanning 192.168.1.1...
+Port 21 closed -> Good
+Port 23 closed -> Good
+Port 80 closed -> Good
+Port 443 closed -> Good
+Port 445 closed -> Good
+Risk=LOW!
+Scanning google.com...
+Port 21 closed -> Good
+Port 23 closed -> Good
+Port 80 open -> High Risk!
+Port 443 open -> High Risk!
+Port 445 closed -> Good
+Risk=MEDIUM!
+Scanning 192.168.1.1...
+Port 21 closed -> Good
+Port 23 closed -> Good
+Port 80 closed -> Good
+Port 443 closed -> Good
+Port 445 closed -> Good
+Risk=LOW!

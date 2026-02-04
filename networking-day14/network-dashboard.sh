@@ -12,7 +12,10 @@
 
 #!/bin/bash
 HTML_FILE="diagnostic-dashboard-$(date +%Y%m%d).html"
-SCRIPTS=("networking-day9/network-diagnostic.sh" "networking-day10/network-layer.sh" "networking-day11/network-health-reporter.sh" "networking-day12/dns-cache-lookup.sh" "networking-day13/home-port-scanner.sh")
+SCRIPTS=("networking-day9/network-diagnostic.sh" 
+"networking-day10/network-layer.sh" "networking-day11/network-health-reporter.sh" 
+"networking-day12/dns-cache-lookup.sh" "networking-day13/home-port-scanner.sh")
+
 NUMBER=1
 
 cat <<EOF > $HTML_FILE
@@ -26,7 +29,8 @@ EOF
 
 for SCRIPT in "${SCRIPTS[@]}"; do
     echo "<h2>Module $NUMBER: $SCRIPT</h2>" >> $HTML_FILE
-    echo "<pre style='background-color: #2e2e2e; color: #00ff00; padding: 15px; border-radius: 5px; overflow: auto;'>" >> $HTML_FILE
+    echo "<pre style='background-color: #2e2e2e; color: #00ff00; padding: 15px;
+	 border-radius: 5px; overflow: auto;'>" >> $HTML_FILE
     
     bash "$HOME/devops-300/$SCRIPT" >> $HTML_FILE 2>&1
     
