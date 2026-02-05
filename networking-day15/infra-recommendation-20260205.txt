@@ -1,0 +1,19 @@
+==========================================
+  NETWORK RECOMMENDATION REPORT
+  Generated: Thu Feb  5 12:11:57 PM WAT 2026
+==========================================
+INPUTS:
+- Distance: 300 m
+- Speed: 30 Mbps
+- PoE: yes (50 W)
+- Security: medium
+
+RECOMMENDATIONS:
+- Cable Type: Fiber Optic (SMF for long-haul, MMF for <500m)
+- PoE Standard: 802.3bt (PoE++)
+- Security Logic: VLAN segmentation (Guest/Staff) and MAC Filtering.
+
+RISKS/WARNINGS:
+[!] Distance exceeds 100m copper limit. Fiber cannot carry PoE.
+
+==========================================
