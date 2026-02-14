@@ -1,0 +1,6 @@
+[ Internet ] -> [ UFW Firewall ] -> [ SSH Hardened ]
+                      |
+              [ monitor-daemon.sh ] -> Logs to /var/log/devops-monitor/
+                      |
+              [ network-mapper.sh ] -> Scans 192.168.9.0/24
+
