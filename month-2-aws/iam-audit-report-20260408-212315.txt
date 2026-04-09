@@ -1,0 +1,22 @@
+═══════════════════════════════════════
+IAM SECURITY AUDIT REPORT
+Generated: Wed Apr  8 09:23:21 PM WAT 2026
+Account ID: 222634367951
+═══════════════════════════════════════
+
+✅ ROOT ACCOUNT SECURITY
+  [0;32m[✓][0m Root MFA enabled
+  [0;32m[✓][0m No root access keys found
+
+⚠️  MFA STATUS
+  [0;31m[✗][0m niyhi-admin: MFA NOT enabled ← RISK!
+  Total users checked: 1
+
+⚠️  ADMINISTRATOR ACCESS
+  [1;33m[!][0m niyhi-admin has AdministratorAccess
+  Total users with admin access: 1
+
+═══════════════════════════════════════
+AUDIT COMPLETE
+Report saved to: iam-audit-report-20260408-212315.txt
+═══════════════════════════════════════
